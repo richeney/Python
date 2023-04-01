@@ -2,11 +2,12 @@
 
 THis repo is purely a personal repo used to help get some training done ready for a GCSE.
 
-OK, let's build something up and test a few areas of that syllabus!
+## Links
 
-## Syllabus
+* [Syllabus](https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content)
+[Python Notes and Guidance](https://filestore.aqa.org.uk/resources/computing/AQA-8525-NG-PY.PDF)
 
-<https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content>
+## Core syllabus components
 
 * basic variables - int, str, float, bool
 * data collections - arrays, dictionaries (plus tuples and sets)
@@ -30,8 +31,8 @@ OK, let's build something up and test a few areas of that syllabus!
 * exception handling (try, except)
 * basic auth (plaintext user and password)
 
-## Challenges
+## Tests
 
-### #1
-
-OK, first steps.
+1. [Computational thinking and programming skills](./TEST1.md)
+1. [Computational thinking and programming skills (cont.)](./TEST1B.md)
+1. [Computing concepts](./TEST2.md)
