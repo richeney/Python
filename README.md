@@ -8,8 +8,6 @@ OK, let's build something up and test a few areas of that syllabus!
 
 <https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content>
 
-### Syllabus summary
-
 * basic variables - int, str, float, bool
 * data collections - arrays, dictionaries (plus tuples and sets)
 * objects and classes incl __init__ and self
