@@ -4,10 +4,14 @@ THis repo is purely a personal repo used to help get some training done ready fo
 
 OK, let's build something up and test a few areas of that syllabus!
 
-## Syllabus summary
+## Syllabus
+
+<https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content>
+
+### Syllabus summary
 
 * basic variables - int, str, float, bool
-* data colelctions - arrays, dictionaries (plus tuples and sets)
+* data collections - arrays, dictionaries (plus tuples and sets)
 * objects and classes incl __init__ and self
 * assignment
 * iteration
@@ -28,4 +32,8 @@ OK, let's build something up and test a few areas of that syllabus!
 * exception handling (try, except)
 * basic auth (plaintext user and password)
 
-## First steps
+## Challenges
+
+### #1
+
+OK, first steps.
