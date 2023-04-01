@@ -1,0 +1,1 @@
+print("Test with value %s and value %i" % ("hello", 5))

@@ -1,0 +1,6 @@
+This is the first	line
+This is the second	line
+Richard Cheney is 51 years old.
+Mark Robinson is 56 years old.
+Jonathan Griffiths is 49 years old.
+This is the last	line
