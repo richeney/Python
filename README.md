@@ -5,7 +5,7 @@ THis repo is purely a personal repo used to help get some training done ready fo
 ## Links
 
 * [Syllabus](https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content)
-[Python Notes and Guidance](https://filestore.aqa.org.uk/resources/computing/AQA-8525-NG-PY.PDF)
+* [Python Notes and Guidance](https://filestore.aqa.org.uk/resources/computing/AQA-8525-NG-PY.PDF)
 
 ## Core syllabus components
 
