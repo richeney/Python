@@ -6,6 +6,10 @@ THis repo is purely a personal repo used to help get some training done ready fo
 
 * [Syllabus](https://www.aqa.org.uk/subjects/computer-science-and-it/gcse/computer-science-8525/subject-content)
 * [Python Notes and Guidance](https://filestore.aqa.org.uk/resources/computing/AQA-8525-NG-PY.PDF)
+* [Topic areas](https://isaaccomputerscience.org/topics/searching?examBoard=aqa&stage=gcse)
+* [Searching algorithms](https://isaaccomputerscience.org/topics/searching?examBoard=aqa&stage=gcse)
+* [Sorting algorithms](https://isaaccomputerscience.org/topics/sorting?examBoard=aqa&stage=gcse)
+* [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
 
 ## Core syllabus components
 
