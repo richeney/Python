@@ -1,0 +1,25 @@
+places = [ "Athens", "Paris", "St Louis", "London", "Vancouver"]
+
+Number of passes?: 4
+number_of_passes = len(places) - 1
+ranges for the passes = range(start, end) - exclusive
+  range(1, len(places))
+  range(1, 5) # Don't forget - second range argument is effectly -1 as exclusive
+  [1, 2, 3, 4]
+
+Number of comparisons per pass?: 4 - not the last one!!
+for index in range(0, len(places) - 1) # [0, 1, 2, 3]
+  compare place to place+1
+
+Total comparison?: 16
+
+swapping = True # Enter the loop
+
+while swapping:
+  swapping = False
+  for index in range(0, len(places)-1)
+    if places[index] > places[index+1]:
+      temp = places[index]
+      places[index] = places[index+1]
+      places[index+1] = temp
+      swapping = True
