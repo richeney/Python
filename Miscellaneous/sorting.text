@@ -13,6 +13,7 @@ for index in range(0, len(places) - 1) # [0, 1, 2, 3]
 
 Total comparison?: 16
 
+
 swapping = True # Enter the loop
 
 while swapping:
