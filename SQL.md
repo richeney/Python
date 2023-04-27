@@ -109,6 +109,8 @@ INSERT INTO Certificate (MemberId, CourseCode, AssessmentDate, InstructorId) VAL
 ('145543','CR0014','2019-07-01',5);
 ```
 
+Press `CTRL`+`D` to come out.
+
 ## Revision
 
 [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
