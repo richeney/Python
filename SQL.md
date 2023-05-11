@@ -1,116 +1,159 @@
 # SQL Revision
 
-## Instal SQLite
-
-Windows
-
-<https://www.tutorialspoint.com/sqlite/sqlite_quick_guide.htm>
-
-Linux
-
-Install
-
-```bash
-sudo apt install sqlite3
-```
-
-## Opening SQLite
-
-Transient in-memory database.
-
-```bash
-sqlite3
-```
-
-Persistent database file.
-
-```bash
-sqlite3 SportsClub
-```
-
-Equivalent to `CREATE DATABASE SportsClub;`.
-
-## Create tables
-
-From <https://cdn.isaaccomputerscience.org/isaac/resources/sportsclub_sql.txt>
-
-```sql
-CREATE TABLE Member (
-     MemberId CHAR(6),
-     FirstName VARCHAR(30),
-     LastName VARCHAR (30),
-     Phone VARCHAR(15),
-     PRIMARY KEY (MemberId));
-
-CREATE TABLE Course (
-     CourseCode CHAR(6),
-     Description VARCHAR(100),
-     Fee DECIMAL (13,2),
-     PRIMARY KEY (CourseCode));
-
-CREATE TABLE Instructor (
-     InstructorId INT,
-     FirstName VARCHAR(30),
-     LastName VARCHAR (30),
-     Email VARCHAR (30),
-     PRIMARY KEY (InstructorId));
-
- CREATE TABLE IF NOT EXISTS Certificate(
-  MemberID CHAR(6),
-  CourseCode CHAR(6),
-  AssessmentDate DATE,
-  InstructorID INT,
-  PRIMARY Key(MemberID, CourseCode),
-  FOREIGN KEY(MemberID) REFERENCES Member(MemberID),
-  FOREIGN KEY(CourseCode) REFERENCES Course(CourseCode),
-  FOREIGN KEY(InstructorID) REFERENCES Instructor(InstructorID)
- );
-```
-
-## Inserting data
-
-```sql
-INSERT INTO Member (MemberID, FirstName, LastName, Phone) VALUES
-('012010','Emily','Marr','01632 961743'),
-('131092','Joe','Donald','01632 960007'),
-('132099','Abdel','Patel','01632 967267'),
-('145543','Precious','Jones','01632 962816'),
-('148765','Jack','Marr','01632 961743');
-
-
-INSERT INTO Course (CourseCode, Description, Fee) VALUES
-('DG0011','Tennis',30),
-('CR0001','Kayaking',100),
-('DG3002','Swimming',20),
-('SO0112','Judo L1',20),
-('SP8701','Judo L2',30),
-('CR0020','Badminton',20),
-('CR0014','Climbing',40);
-
-
-INSERT INTO Instructor (InstructorId, FirstName, LastName, Email) VALUES
-(1,'Sue','James','sue.james@example.org'),
-(2,'Greta','Geuze', 'g.geuze@example.com'),
-(3,'Mohammed','Franks', 'm.franks@example.com'),
-(4,'Jay','Linton', 'Jay12@example.net'),
-(5,'Sue','Robbins', 'susan.robbins@example.net');
-
-
-INSERT INTO Certificate (MemberId, CourseCode, AssessmentDate, InstructorId) VALUES
-('145543','DG0011','2019-02-21',1),
-('012010','DG0011','2019-02-21',1),
-('132099','DG3002','2019-03-01',2),
-('131092','CR0001','2019-04-15',3),
-('132099','CR0001','2019-04-15',3),
-('012010','CR0020','2019-04-15',5),
-('132099','SO0112','2019-06-02',4),
-('145543','SO0112','2019-06-02',4),
-('148765','SP8701','2019-06-11',2),
-('145543','CR0014','2019-07-01',5);
-```
-
-Press `CTRL`+`D` to come out.
-
-## Revision
+## Topics
 
 [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
+
+## Info
+
+Database: SportsClub
+
+Table: Member
+     **MemberId** CHAR(6)
+     FirstName VARCHAR(30)
+     LastName VARCHAR (30)
+     Phone VARCHAR(15)
+
+Table: Course
+     **CourseCode** CHAR(6)
+     Description VARCHAR(100)
+     Fee DECIMAL (13,2)
+
+Table: Instructor
+     **InstructorId** INT
+     FirstName VARCHAR(30)
+     LastName VARCHAR (30)
+     Email VARCHAR (30)
+
+Table: Certificate
+  ***MemberID*** CHAR(6)
+  ***CourseCode*** CHAR(6)
+  AssessmentDate DATE
+  *InstructorID* INT
+
+> Key: bold fields are primary keys, italic fields refer to another table for consistency
+
+## Practice
+
+1. List the instructors, showing first and last name, and email address
+1. Repeat, but sort by surname
+1. List the course code, name and price where price is more than £20. Sort by most expensive to least.
+1. Add a new course: Squash, £25, with a code CR0010
+1. List the course names and price where the course code starts with CR.
+1. Emily and Jack Marr were assessed on 11/05/2023 by squash instructor, Greta. Add the records in.
+1. Output the member's first and last name, course description, assessment date.
+1. Abdel Patel's number has changed to 01632 912345.
+1. Do a quick check by showing the whole Member table.
+1. Joe Donald has left the club.
+1. Rerun the command to output the members, course name and assessments, but also add the assessor's firstname and sort it by date, most recent first.
+
+## Picture
+
+Here is a nice picture of Fluffy, who's guarding the answers...
+
+![Fluffy](https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_520/MTc2Mjk0MjYxMjIxMjM3OTMz/harry-potter-fluffy.webp)
+
+## Answers
+
+We're checking, not cheating, right?
+
+1. List the instructors, showing first and last name, and email address
+
+    ```sql
+    SELECT FirstName, LastName, Email
+    FROM Instructor;
+    ```
+
+1. Repeat, but sort by surname
+
+    ```sql
+    SELECT FirstName, LastName, Email
+    FROM Instructor
+    ORDER BY LastName;
+    ```
+
+1. List the course code, name and price where price is more than £20. Sort by most expensive to least.
+
+    ```sql
+    SELECT CourseCode, Description, Fee
+    FROM Course
+    WHERE Fee > 20
+    ORDER BY Fee DESC;
+    ```
+
+1. Add a new course: Squash, £25, with a code CR0010
+
+    ```sql
+    INSERT INTO Course (CourseCode, Description, Fee)
+    VALUES ('CR0010', 'Squash', 25);
+    ```
+
+1. List the course names and price where the course code starts with CR.
+
+    ```sql
+    SELECT Description, Fee
+    FROM Course
+    WHERE CourseCode LIKE "CR%";
+    ```
+
+1. Emily and Jack Marr were assessed on 11/05/2023 by squash instructor, Greta. Add the records in.
+
+    ```sql
+    SELECT MemberID
+    FROM Member
+    WHERE LastName = "Marr";
+
+    SELECT InstructorId
+    FROM Instructor
+    WHERE FirstName = "Greta";
+
+    INSERT INTO Certificate(MemberID, CourseCode, AssessmentDate, InstructorID)
+    VALUES
+    ('012010','CR0010','2023-05-11',2),
+    ('148765','CR0010','2023-05-11',2);
+    ```
+
+1. Output the member's first and last name, course description, assessment date.
+
+    ```sql
+    SELECT Member.FirstName, Member.LastName, Course.Description, Certificate.AssessmentDate
+    FROM Member, Course, Certificate
+    WHERE Certificate.MemberId = Member.MemberId AND Certificate.CourseCode = Course.CourseCode;
+    ```
+
+1. Abdel Patel's number has changed to 01632 912345.
+
+    ```sql
+    UPDATE Member
+    SET Phone = "01632 912345"
+    WHERE FirstName = "Abdel" AND LastName = "Patel";
+    ```
+
+1. Do a quick check by showing the whole Member table.
+
+    ```sql
+    SELECT * FROM Member;
+    ```
+
+1. Joe Donald has left the club.
+
+    ```sql
+    SELECT *
+    FROM Member
+    WHERE FirstName = "Joe" AND LastName = "Donald";
+
+    DELETE
+    FROM Member
+    WHERE FirstName = "Joe" AND LastName = "Donald";
+    ```
+
+1. Rerun the command to output the members, course name and assessments, but also add the assessor's firstname and sort it by date, most recent first.
+
+    ```sql
+    SELECT Member.FirstName, Member.LastName, Course.Description, Certificate.AssessmentDate, Instructor.FirstName
+    FROM Member, Course, Certificate, Instructor
+    WHERE Certificate.MemberId = Member.MemberId AND Certificate.CourseCode = Course.CourseCode AND Certificate.InstructorId = Instructor.InstructorId
+    ORDER BY Certificate.AssessmentDate DESC;
+    ```
+
+Easy peasy!
