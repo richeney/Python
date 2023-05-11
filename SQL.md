@@ -14,7 +14,7 @@ Table: Member
 |---|---|
 | **MemberId** | CHAR(6) |
 | FirstName | VARCHAR(30) |
-| LastName VARCHAR | (30) |
+| LastName | VARCHAR (30) |
 | Phone | VARCHAR(15) |
 
 Table: Course
@@ -23,7 +23,7 @@ Table: Course
 |---|---|
 | **CourseCode** | CHAR(6) |
 | Description | VARCHAR(100) |
-| Fee DECIMAL | (13,2) |
+| Fee | DECIMAL (13,2) |
 
 Table: Instructor
 
