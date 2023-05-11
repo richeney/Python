@@ -4,6 +4,13 @@
 
 [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
 
+## Get started
+
+```powershell
+cd C:\Users\ronni\documents\Python
+sqlite SportsClub
+```
+
 ## Database: SportsClub
 
 > Key: bold fields are primary keys, italic fields refer to another table for consistency

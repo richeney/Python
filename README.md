@@ -11,55 +11,14 @@ THis repo is purely a personal repo used to help get some training done ready fo
     * [Sorting algorithms](https://isaaccomputerscience.org/topics/sorting?examBoard=aqa&stage=gcse)
     * [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
 
-## Homework
+## Exams
 
-1. Read the sorting algorithms for merge
-1. Use rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
-1. Create searching algorithm subroutines for
-    1. linear
-    1. binary
-1. efficient sorting algorithms
-    1. bubble
-    1. merge
-1. Get ready for algorithm pop quiz, hot shot
-1. Find out where "pop quiz, hot shot" comes from as a movie reference
-
-```python
-
-def linear_search(array, item) {
-  :
-  return index
-}
-
-def binary_search(array, item) {
-  :
-  return index
-}
-
-def bubble_sort(array) {
-  :
-  return array
-}
-
-def merge_sort(array) {
-  :
-  return array
-}
-
-## Main
-
-rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
-# Get the input colour from user
-
-print("Index is %i for %s using linear." % (linear_search(rainbow, colour), colour))
-print("index is whatever for colour using binary")
-print("Bubble sorted array is", bubble_sort(rainbow))
-print("merged sorted array is sorted_array")
-
-
-
-
-```
+1. Session - Sun 11th 16:00
+1. Session - Thu 18th 18:30
+1. Computational thinking and programming skills - Fri 19th
+1. Session - Sun 21st 10:30
+1. Session - Wed 24th 18:30
+1. Computing concepts - Thu 25th
 
 ## Core syllabus components
 
