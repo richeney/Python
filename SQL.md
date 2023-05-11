@@ -8,7 +8,7 @@
 
 ```powershell
 cd C:\Users\ronni\documents\Python
-sqlite SportsClub
+sqlite3 SportsClub
 ```
 
 ## Database: SportsClub
