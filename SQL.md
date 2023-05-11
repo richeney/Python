@@ -6,6 +6,8 @@
 
 ## Database: SportsClub
 
+> Key: bold fields are primary keys, italic fields refer to another table for consistency
+
 ### Member
 
 | Field | Type |
@@ -40,8 +42,6 @@
 | ***CourseCode*** | CHAR(6) |
 | AssessmentDate | DATE |
 | *InstructorID* | INT |
-
-> Key: bold fields are primary keys, italic fields refer to another table for consistency
 
 ## Practice
 
