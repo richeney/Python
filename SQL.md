@@ -9,27 +9,39 @@
 Database: SportsClub
 
 Table: Member
-     **MemberId** CHAR(6)
-     FirstName VARCHAR(30)
-     LastName VARCHAR (30)
-     Phone VARCHAR(15)
+
+| Field | Type |
+|---|---|
+| **MemberId** | CHAR(6) |
+| FirstName | VARCHAR(30) |
+| LastName VARCHAR | (30) |
+| Phone | VARCHAR(15) |
 
 Table: Course
-     **CourseCode** CHAR(6)
-     Description VARCHAR(100)
-     Fee DECIMAL (13,2)
+
+| Field | Type |
+|---|---|
+| **CourseCode** | CHAR(6) |
+| Description | VARCHAR(100) |
+| Fee DECIMAL | (13,2) |
 
 Table: Instructor
-     **InstructorId** INT
-     FirstName VARCHAR(30)
-     LastName VARCHAR (30)
-     Email VARCHAR (30)
+
+| Field | Type |
+|---|---|
+| **InstructorId** | INT |
+| FirstName | VARCHAR(30) |
+| LastName | VARCHAR (30) |
+| Email | VARCHAR (30) |
 
 Table: Certificate
-  ***MemberID*** CHAR(6)
-  ***CourseCode*** CHAR(6)
-  AssessmentDate DATE
-  *InstructorID* INT
+
+| Field | Type |
+|---|---|
+| ***MemberID*** | CHAR(6) |
+| ***CourseCode*** | CHAR(6) |
+| AssessmentDate | DATE |
+| *InstructorID* | INT |
 
 > Key: bold fields are primary keys, italic fields refer to another table for consistency
 
