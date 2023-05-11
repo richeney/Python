@@ -4,11 +4,9 @@
 
 [SQL](https://isaaccomputerscience.org/topics/sql?examBoard=aqa&stage=gcse)
 
-## Info
+## Database: SportsClub
 
-Database: SportsClub
-
-Table: Member
+### Member
 
 | Field | Type |
 |---|---|
@@ -17,7 +15,7 @@ Table: Member
 | LastName | VARCHAR (30) |
 | Phone | VARCHAR(15) |
 
-Table: Course
+### Course
 
 | Field | Type |
 |---|---|
@@ -25,7 +23,7 @@ Table: Course
 | Description | VARCHAR(100) |
 | Fee | DECIMAL (13,2) |
 
-Table: Instructor
+### Instructor
 
 | Field | Type |
 |---|---|
@@ -34,7 +32,7 @@ Table: Instructor
 | LastName | VARCHAR (30) |
 | Email | VARCHAR (30) |
 
-Table: Certificate
+### Certificate
 
 | Field | Type |
 |---|---|
